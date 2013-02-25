@@ -9,4 +9,5 @@ recursive-exclude tests *.pyc
 recursive-exclude tests *.pyo
 recursive-exclude examples *.pyc
 recursive-exclude examples *.pyo
-
+recursive-include wmd statis
+recursive-include wmd/static *
