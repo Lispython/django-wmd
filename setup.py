@@ -29,7 +29,7 @@ except Exception, e:
     print(e)
     readme_content = __doc__
 
-VERSION = "0.0.2"
+VERSION = "0.0.3"
 
 def run_tests():
     from tests.run_tests import suite
@@ -61,6 +61,7 @@ setup(
     packages=find_packages(exclude=("tests",)),
     install_requires=install_requires,
     tests_require=tests_require,
+    include_package_data=True,
     license="BSD",
     platforms = ['Linux', 'Mac'],
     classifiers=[
